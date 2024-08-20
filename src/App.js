@@ -37,7 +37,7 @@ const DateTimePicker = () => {
                   <input
                     type="text"
                     placeholder=""
-                    class="border border-gray-300 p-1 w-64 mt-4 mb-4 h-10"
+                    class="border border-gray-300 p-1 w-64 mt-2 mb-4 h-10"
                   />
                   <p>First Name</p>
                 </div>
@@ -45,7 +45,7 @@ const DateTimePicker = () => {
                   <input
                     type="text"
                     placeholder=""
-                    class="border border-gray-300 p-1 w-64 mt-4 mb-4 h-10"
+                    class="border border-gray-300 p-1 w-64 mt-2 mb-4 h-10"
                   />
                   <p>Last Name</p>
                 </div>
@@ -73,11 +73,11 @@ const DateTimePicker = () => {
                 <p class="text-2xl mt-4 ">Gender</p>
                 <div class="flex  mt-2 text-1xl space-x-96">
                   <div class="inline-flex items-center">
-                    <input type="radio" name="gender" value="male" class="" />
+                    <input type="radio" name="gender" value="male" class="mr-1"/>
                     Male
                   </div>
                   <div class="inline-flex items-center">
-                    <input type="radio" name="gender" value="female" />
+                    <input type="radio" name="gender" value="female" class="mr-1"/>
                     Female
                   </div>
                 </div>
@@ -126,32 +126,33 @@ const DateTimePicker = () => {
                 </div>
                 <div>
                   <p class="mt-4 text-2xl">Type of Dance</p>
-                  <div class="flex  mt-2 text-1xl space-x-96">
+                  <div class="flex  mt-6 text-1xl space-x-96">
                     <div class="">
-                      <input type="radio" class="" />
+                      <input type="radio" class="mr-1"/>
                       Salsa
                       <br />
-                      <input type="radio" class="mt-2" />
+                      <input type="radio" class="mt-3 mr-1" />
                       Tango
                       <br />
-                      <input type="radio" class="mt-2" />
+                      <input type="radio" class="mt-3 mr-1" />
                       Club
                       <br />
-                      <input type="radio" class="mt-2" />
+                      <input type="radio" class="mt-3 mr-1" />
                       Others
                     </div>
 
                     <div class="">
-                      <input type="radio" />
+                      <input type="radio" class="mr-1"/>
                       Bachata
                       <br />
-                      <input type="radio" class="mt-2" />
+                      <input type="radio" class="mt-2 mr-1" />
                       Hip Hop
                     </div>
                   </div>
                 </div>
                 <div>
-                  <p class="mt-3 text-2xl">Start Day & Time</p>
+                  <div class="flex justify-between">
+                  <p class="mt-6 text-2xl">Start Day & Time</p>
                   <div className="flex flex-col space-y-4 p-4">
                     <div>
                       <label className="block text-sm font-medium text-gray-700">
@@ -161,7 +162,7 @@ const DateTimePicker = () => {
                         type="date"
                         value={date}
                         onChange={handleDateChange}
-                        className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                        className="mt-1 block w-52 p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                       />
                     </div>
 
@@ -191,6 +192,8 @@ const DateTimePicker = () => {
                           <option value="PM">PM</option>
                         </select>
                       </div>
+                    
+                    </div>
                     </div>
                   </div>
                   <div>
